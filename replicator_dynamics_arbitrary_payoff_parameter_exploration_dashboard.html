@@ -13181,6 +13181,24 @@ div#notebook {
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pip</span> install matplotlib -qqq
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">Layout</span>
 <span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
@@ -13510,7 +13528,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_plh_e</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatLogSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.001</span><span class="p">),</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;plh extra&quot;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="mf">0.02</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_plh_e</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">dashboard</span><span class="o">.</span><span class="n">on_plh_e_selected</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="s2">&quot;value&quot;</span><span class="p">)</span>
         
-        <span class="bp">self</span><span class="o">.</span><span class="n">selection_phl_e</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatLogSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.001</span><span class="p">),</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;plh extra&quot;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selection_phl_e</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatLogSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.001</span><span class="p">),</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;phl extra&quot;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_phl_e</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">dashboard</span><span class="o">.</span><span class="n">on_plh_e_selected</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="s2">&quot;value&quot;</span><span class="p">)</span>
 
         <span class="c1"># [0.001, 0.008, 0.0036, 0.00036, 0.005, 0.0016]</span>
@@ -13520,7 +13538,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_beta</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatLogSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.0008</span><span class="p">),</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.08</span><span class="p">),</span> <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;beta&quot;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="mf">0.008</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_beta</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">dashboard</span><span class="o">.</span><span class="n">on_beta_selected</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="s2">&quot;value&quot;</span><span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">selection_gamma</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatLogSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.00036</span><span class="p">),</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.036</span><span class="p">),</span> <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="mf">0.0036</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selection_gamma</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatLogSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.00036</span><span class="p">),</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.036</span><span class="p">),</span> <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;gamma&quot;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="mf">0.0036</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_gamma</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">dashboard</span><span class="o">.</span><span class="n">on_gamma_selected</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="s2">&quot;value&quot;</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_A</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatLogSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.000036</span><span class="p">),</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.0036</span><span class="p">),</span> <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="mf">0.00036</span><span class="p">)</span>
@@ -13570,8 +13588,8 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Image_box</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dashboard</span><span class="p">):</span>
-        <span class="o">%</span><span class="k">pip</span> install matplotlib
-        <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+        <span class="c1">#%pip install matplotlib</span>
+        <span class="c1">#import matplotlib.pyplot as plt</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Image</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dashboard</span> <span class="o">=</span> <span class="n">dashboard</span>
         
@@ -13603,13 +13621,13 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
         
     <span class="k">def</span> <span class="nf">print_image</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        
-        <span class="k">try</span><span class="p">:</span>
-            <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-        <span class="k">except</span><span class="p">:</span>
-            <span class="o">%</span><span class="k">pip</span> install matplotlib -qqq
-            <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-        
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        try:</span>
+<span class="sd">            import matplotlib.pyplot as plt</span>
+<span class="sd">        except:</span>
+<span class="sd">            %pip install matplotlib -qqq</span>
+<span class="sd">            import matplotlib.pyplot as plt</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         
         <span class="n">A</span> <span class="o">=</span> <span class="n">payoff_matrix_param</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">alpha</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">beta</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">gamma</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">B</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Gamma</span><span class="p">)</span>
         <span class="n">XXe</span><span class="p">,</span> <span class="n">NNe</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">plh</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">plh_e</span><span class="p">,</span> <span class="n">phl</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">phl_e</span><span class="p">,</span> <span class="n">X0</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">non0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">fac0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">obl0</span><span class="p">])</span> 
@@ -13757,8 +13775,8 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Image2_box</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dashboard</span><span class="p">):</span>
-        <span class="o">%</span><span class="k">pip</span> install matplotlib
-        <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+        <span class="c1">#%pip install matplotlib</span>
+        <span class="c1">#import matplotlib.pyplot as plt</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Image</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dashboard</span> <span class="o">=</span> <span class="n">dashboard</span>
         
@@ -13790,13 +13808,13 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
         
     <span class="k">def</span> <span class="nf">print_image</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        
-        <span class="k">try</span><span class="p">:</span>
-            <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-        <span class="k">except</span><span class="p">:</span>
-            <span class="o">%</span><span class="k">pip</span> install matplotlib -qqq
-            <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-        
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        try:</span>
+<span class="sd">            import matplotlib.pyplot as plt</span>
+<span class="sd">        except:</span>
+<span class="sd">            %pip install matplotlib -qqq</span>
+<span class="sd">            import matplotlib.pyplot as plt</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         
         <span class="n">A</span> <span class="o">=</span> <span class="n">payoff_matrix_param</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">alpha</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">beta</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">gamma</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">B</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Gamma</span><span class="p">)</span>
         
@@ -14049,6 +14067,39 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: matplotlib in /usr/lib/python3.8/site-packages (3.2.0)
+Requirement already satisfied: cycler&gt;=0.10 in /usr/lib/python3.8/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/lib/python3.8/site-packages (from matplotlib) (1.1.0)
+Requirement already satisfied: numpy&gt;=1.11 in /usr/lib/python3.8/site-packages (from matplotlib) (1.18.1)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.1 in /usr/lib/python3.8/site-packages (from matplotlib) (2.4.6)
+Requirement already satisfied: python-dateutil&gt;=2.1 in /usr/lib/python3.8/site-packages (from matplotlib) (2.8.1)
+Requirement already satisfied: six in /usr/lib/python3.8/site-packages (from cycler&gt;=0.10-&gt;matplotlib) (1.14.0)
+Requirement already satisfied: setuptools in /usr/lib/python3.8/site-packages (from kiwisolver&gt;=1.0.1-&gt;matplotlib) (46.1.1)
+<span class="ansi-yellow-fg">WARNING: You are using pip version 20.1; however, version 20.1.1 is available.
+You should consider upgrading via the &#39;/usr/bin/python3 -m pip install --upgrade pip&#39; command.</span>
+Note: you may need to restart the kernel to use updated packages.
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: matplotlib in /usr/lib/python3.8/site-packages (3.2.0)
+Requirement already satisfied: cycler&gt;=0.10 in /usr/lib/python3.8/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/lib/python3.8/site-packages (from matplotlib) (1.1.0)
+Requirement already satisfied: numpy&gt;=1.11 in /usr/lib/python3.8/site-packages (from matplotlib) (1.18.1)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.1 in /usr/lib/python3.8/site-packages (from matplotlib) (2.4.6)
+Requirement already satisfied: python-dateutil&gt;=2.1 in /usr/lib/python3.8/site-packages (from matplotlib) (2.8.1)
+Requirement already satisfied: six in /usr/lib/python3.8/site-packages (from cycler&gt;=0.10-&gt;matplotlib) (1.14.0)
+Requirement already satisfied: setuptools in /usr/lib/python3.8/site-packages (from kiwisolver&gt;=1.0.1-&gt;matplotlib) (46.1.1)
+<span class="ansi-yellow-fg">WARNING: You are using pip version 20.1; however, version 20.1.1 is available.
+You should consider upgrading via the &#39;/usr/bin/python3 -m pip install --upgrade pip&#39; command.</span>
+Note: you may need to restart the kernel to use updated packages.
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 

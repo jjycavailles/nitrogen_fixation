@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-#Species = ['non fixer', 'facultative fixer', 'obligate fixer']
+
+Species = ['non fixer', 'facultative fixer', 'obligate fixer']
 
 def payoff_matrix_param_low(alpha, beta, gamma):
     Al = np.array([[0, -alpha, -beta],

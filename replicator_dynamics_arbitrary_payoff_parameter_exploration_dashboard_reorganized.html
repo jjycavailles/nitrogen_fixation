@@ -13445,7 +13445,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="n">children</span> <span class="o">=</span> <span class="p">[</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_new</span><span class="p">,</span>
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>   
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">)</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;))   </span>
 </pre></div>
 
     </div>
@@ -13500,7 +13500,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="n">children</span> <span class="o">=</span> <span class="p">[</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_finaltime</span><span class="p">,</span>
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>   
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">)</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;))   </span>
 </pre></div>
 
     </div>
@@ -13547,16 +13547,16 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_param2</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dashboard</span><span class="o">.</span><span class="n">on_param2_t_selected</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="s2">&quot;value&quot;</span><span class="p">)</span>
         
         <span class="n">children</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">selection_non0_t</span><span class="p">,</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">selection_fac0_t</span><span class="p">,</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">selection_obl0_t</span><span class="p">,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_param</span><span class="p">,</span>
 <span class="c1">#        self.selection_phl_t,</span>
 <span class="c1">#        self.selection_plh_t,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_param1</span><span class="p">,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_param2</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selection_non0_t</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selection_fac0_t</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selection_obl0_t</span><span class="p">,</span>
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>   
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">)</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;))   </span>
         
 
     <span class="k">def</span> <span class="nf">on_param_selected</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">change</span><span class="p">):</span>
@@ -13598,7 +13598,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_param1</span><span class="p">,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_param2</span><span class="p">,</span>
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>  
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">)</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;))  </span>
     <span class="c1">#    &quot;&quot;&quot;</span>
 </pre></div>
 
@@ -13645,14 +13645,14 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         
         
         <span class="n">children</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">selection_non0_e</span><span class="p">,</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">selection_fac0_e</span><span class="p">,</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">selection_obl0_e</span><span class="p">,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_param</span><span class="p">,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_phl_e</span><span class="p">,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">selection_plh_e</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selection_non0_e</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selection_fac0_e</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selection_obl0_e</span><span class="p">,</span>
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>   
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">)</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;))   </span>
 </pre></div>
 
     </div>
@@ -13694,7 +13694,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="n">children</span> <span class="o">=</span> <span class="p">[</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">html</span><span class="p">,</span>   
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">)</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;))</span>
         
     <span class="k">def</span> <span class="nf">print_html</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">phl</span>
@@ -13704,7 +13704,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="n">rec</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">plh</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">plh</span>
         <span class="n">freq</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">phl</span> <span class="o">+</span> <span class="n">rec</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
         <span class="n">nbre_dec</span> <span class="o">=</span> <span class="mi">5</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;pl = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">pl</span><span class="p">,</span> <span class="n">nbre_dec</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot;&lt;br /&gt;ph = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">ph</span><span class="p">,</span> <span class="n">nbre_dec</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot;&lt;br /&gt;recovery rate = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">rec</span><span class="p">,</span> <span class="n">nbre_dec</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot;&lt;br /&gt;disturbance frequency = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">nbre_dec</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;pl = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">pl</span><span class="p">,</span> <span class="n">nbre_dec</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot;&lt;br /&gt;ph = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">ph</span><span class="p">,</span> <span class="n">nbre_dec</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot;&lt;br /&gt;recovery time = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">rec</span><span class="p">,</span> <span class="n">nbre_dec</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot;&lt;br /&gt;disturbance frequency = &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">nbre_dec</span><span class="p">))</span>
         <span class="k">return</span>
         
 
@@ -13861,7 +13861,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
    <span class="c1">#     image_container,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="p">,</span>   
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">)</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;))</span>
         
     <span class="k">def</span> <span class="nf">print_image</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1">#&quot;&quot;&quot;</span>
@@ -13890,7 +13890,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="n">XX</span><span class="p">,</span> <span class="n">NN</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">plh</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">plh</span><span class="p">,</span> <span class="n">phl</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">phl</span><span class="p">,</span> <span class="n">X0</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">non0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">fac0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">obl0</span><span class="p">])</span> 
         
        <span class="c1"># fig = plt.figure(figsize=(16, 6))</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span> 
+        <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span> 
         <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
         
         <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">forest</span> <span class="o">==</span> <span class="s2">&quot;tropical&quot;</span><span class="p">):</span>
@@ -13901,6 +13901,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="k">elif</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">forest</span> <span class="o">==</span> <span class="s2">&quot;extra&quot;</span><span class="p">):</span>
             <span class="n">plot_biomass</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">XX</span><span class="p">,</span> <span class="n">NN</span><span class="p">,</span> <span class="s2">&quot;Extra&quot;</span><span class="p">)</span> 
             <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
         <span class="c1">#plt.show()</span>
         
 
@@ -14068,7 +14069,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
    <span class="c1">#     image_container,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="p">,</span>   
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">)</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;))</span>
         
     <span class="k">def</span> <span class="nf">print_image</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -14269,7 +14270,8 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
             <span class="n">An</span> <span class="o">=</span> <span class="n">payoff_matrix_param_high</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">B</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Gamma</span><span class="p">)</span>
 
         <span class="c1">#plt.subplots(1,2, figsize = (16, 5))</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+        <span class="c1">#plt.figure(figsize=(8,5))</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
         <span class="c1">#Al = A[0]</span>
         <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">finaltime</span><span class="p">,</span> <span class="nb">max</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">finaltime</span><span class="o">//</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">]))</span>
         <span class="n">plot_determinist_level</span><span class="p">(</span><span class="n">An</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -14373,7 +14375,7 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="n">children</span> <span class="o">=</span> <span class="p">[</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">html</span><span class="p">,</span>   
         <span class="p">]</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">children</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">self_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
         
     <span class="k">def</span> <span class="nf">print_html</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">nbre_units</span> <span class="o">=</span> <span class="mi">6</span>
@@ -14492,18 +14494,34 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="n">row_text</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">transition_box_tropical</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">transition_box_extra</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
         
         <span class="n">row0</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">select_box_tropic</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">select_box_extra</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">select_box_low</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">select_box_high</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">select_finaltime</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
-        <span class="n">C1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">image_box_tropical</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_box_extra</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
+        <span class="n">C1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">image_box_tropical</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_box_extra</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">,</span> <span class="n">align_self</span> <span class="o">=</span> <span class="s1">&#39;center&#39;</span><span class="p">))</span>
         <span class="c1">#C2 = widgets.Box([self.select_box], layout=Layout(width=&quot;32%&quot;))</span>
         
-        <span class="n">C01</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">image2_box_low</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image2_box_high</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
+        <span class="n">C01</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">image2_box_low</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image2_box_high</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">,</span> <span class="n">align_self</span> <span class="o">=</span> <span class="s1">&#39;center&#39;</span><span class="p">))</span>
         <span class="c1">#rowA = widgets.Box([self.image_box, self.select_box], layout=Layout(width=&quot;100%&quot;))</span>
         <span class="c1">#rowA = widgets.Box([C1, C2], layout=Layout(width=&quot;100%&quot;))</span>
         <span class="n">rowA</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="n">C1</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
         <span class="n">rowB</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="n">C01</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
         <span class="n">rowC</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">matrix_box_l</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">matrix_box_h</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">new</span><span class="p">,</span> <span class="n">row0</span><span class="p">,</span> <span class="n">row_text</span><span class="p">,</span> <span class="n">rowA</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_box_dominant</span><span class="p">,</span> <span class="n">rowB</span><span class="p">,</span> <span class="n">rowC</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
-    
-
+        <span class="c1">#super().__init__([self.new, row0, row_text, rowA, self.image_box_dominant, rowB, rowC], layout=Layout(width=&quot;100%&quot;))</span>
+        
+        
+<span class="c1">#        col_tropic = widgets.VBox([self.select_box_tropic, self.transition_box_tropical], layout=Layout(width=&quot;100%&quot;, align_content = &#39;center&#39;)) </span>
+ <span class="c1">#       col_extra = widgets.VBox([self.select_box_extra, self.transition_box_extra], layout=Layout(width=&quot;100%&quot;, align_content = &#39;center&#39;)) </span>
+        
+        <span class="c1">#row_numeric = widgets.Box([self.new, self.select_finaltime], layout=Layout(width=&quot;100%&quot;)) </span>
+        <span class="c1">#row_forest = widgets.Box([col_tropic, self.image_box_tropical, col_extra, self.image_box_extra], layout=Layout(width=&quot;100%&quot;))</span>
+        <span class="n">row_select_text_forest</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">select_box_tropic</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">transition_box_tropical</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">select_box_extra</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">transition_box_extra</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+        <span class="n">row_plot_forest</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">image_box_tropical</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_box_extra</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span> 
+        <span class="n">row_dominant</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">image_box_dominant</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+        <span class="n">row_low_high</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">select_box_low</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image2_box_low</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">select_box_high</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">image2_box_high</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+        <span class="n">matrices_low</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">matrix_box_l</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;50%&quot;</span><span class="p">,</span> <span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+        <span class="n">matrices_high</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">matrix_box_h</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;50%&quot;</span><span class="p">,</span> <span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+        <span class="n">row_matrices</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="n">matrices_low</span><span class="p">,</span> <span class="n">matrices_high</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span><span class="p">))</span>
+        <span class="c1">#super().__init__([row_numeric, row_forest, row_dominant, row_low_high, row_matrices], layout=Layout(width=&quot;100%&quot;))</span>
+        <span class="n">row_finaltime</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">select_finaltime</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span> <span class="o">=</span> <span class="s1">&#39;center&#39;</span><span class="p">))</span>
+        <span class="n">row_new</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">new</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">([</span><span class="n">row_matrices</span><span class="p">,</span> <span class="n">row_low_high</span><span class="p">,</span> <span class="n">row_dominant</span><span class="p">,</span> <span class="n">row_select_text_forest</span><span class="p">,</span> <span class="n">row_finaltime</span><span class="p">,</span> <span class="n">row_new</span><span class="p">,</span> <span class="n">row_plot_forest</span><span class="p">])</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;, justify_content = &quot;center&quot;))</span>
     
     
     <span class="k">def</span> <span class="nf">on_non0_t_selected</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">change</span><span class="p">):</span>
@@ -14709,23 +14727,6 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
 
 </div>
 
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
 

@@ -1080,8 +1080,3 @@ class Dashboard(widgets.VBox):
 #        self.image2_box_low.print_image()
 #        self.matrix_box_h.print_html()
 #        self.matrix_box_l.print_html()
-
-
-
-
-D=Dashboard()

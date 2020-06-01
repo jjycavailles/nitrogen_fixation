@@ -1,5 +1,8 @@
+import nbinteract as nbi
+
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 Species = ['non fixer', 'facultative fixer', 'obligate fixer']
 

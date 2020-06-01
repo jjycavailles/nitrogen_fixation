@@ -1081,3 +1081,7 @@ class Dashboard(widgets.VBox):
 #        self.matrix_box_h.print_html()
 #        self.matrix_box_l.print_html()
 
+
+
+
+D=Dashboard()

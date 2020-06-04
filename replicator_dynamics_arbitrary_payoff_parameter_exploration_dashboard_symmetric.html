@@ -14487,7 +14487,8 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Dashboard</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;begin init dasboard&quot;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">non0_t</span> <span class="o">=</span> <span class="mf">0.45</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">fac0_t</span> <span class="o">=</span> <span class="mf">0.45</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">obl0_t</span> <span class="o">=</span> <span class="mf">0.1</span>
@@ -14588,6 +14589,9 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
         <span class="n">row_finaltime</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">select_finaltime</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span> <span class="o">=</span> <span class="s1">&#39;center&#39;</span><span class="p">))</span>
         <span class="n">row_new</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">new</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
         <span class="n">row_symmetric</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Box</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">box_symmetric</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">justify_content</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;End init dasboard&quot;</span><span class="p">)</span>
+        
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">([</span><span class="n">row_symmetric</span><span class="p">,</span> <span class="n">row_matrices</span><span class="p">,</span> <span class="n">row_low_high</span><span class="p">,</span> <span class="n">row_dominant</span><span class="p">,</span> <span class="n">row_select_text_forest</span><span class="p">,</span> <span class="n">row_finaltime</span><span class="p">,</span> <span class="n">row_new</span><span class="p">,</span> <span class="n">row_plot_forest</span><span class="p">])</span><span class="c1">#, layout=Layout(width=&quot;100%&quot;, justify_content = &quot;center&quot;))</span>
     
     
@@ -14809,6 +14813,17 @@ plt.subplot(1,2,2)  ; plot_nitrogen(T, XXt, NNt, "Tropical") ; plt.show()
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>begin init dasboard
+End init dasboard
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
